@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- user greeting -->
+    <div id="greeting" style="display:none"></div>
+
+    <!-- username and password inputs -->
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="loginButton">Login</button><br>
+
+    <!-- display error message if incorrect input -->    
+    <div id="error" style="display:none"></div>
+
+    <!-- dropdown list -->
+    <select id="ticketType">
+        <option value="computer">Computer Support</option>
+        <option value="software">Software Support</option>
+        <option value="network">Network Support</option>
+    </select>
+    <div id="computerFields" style="display: none;">
+        <!-- Computer support fields here -->
+    </div>
+    <div id="softwareFields" style="display: none;">
+        <!-- Software support fields here -->
+    </div>
+    <div id="networkFields" style="display: none;">
+        <!-- Network support fields here -->
+    </div>
+    
+    <!-- validate form info -->
+    <form id="supportForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit" id="submitButton" disabled>Submit</button>
+    </form>
+    <div id="errorMessages" style="color: red;"></div>
+
+
+
+    <script src='main.js'></script>
+</body>
+</html>
