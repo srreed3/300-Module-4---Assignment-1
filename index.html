@@ -10,11 +10,11 @@
 </head>
 <body>
     <!-- user greeting -->
-    <div id="greeting" style="display:none"></div>
+    <div id="greeting" style="display: none" class="error"></div>
 
     <!-- username and password inputs -->
-    <input type="text" id="username" placeholder="Username" required>
-    <input type="password" id="password" placeholder="Password" required>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
     <button id="loginButton">Login</button><br>
 
     <!-- display error message if incorrect input -->    
@@ -38,11 +38,11 @@
     
     <!-- validate form info -->
     <form id="supportForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <button type="submit" id="submitButton" disabled>Submit</button>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <button type="submit" id="submitButton">Submit</button>
     </form>
-    <div id="errorMessages" style="color: red;"></div>
+    <div id="errorMessages"></div>
 
 
 
