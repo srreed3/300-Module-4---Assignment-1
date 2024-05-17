@@ -63,18 +63,4 @@ $(document).ready(function() {
             event.preventDefault(); //prevent form from submitting if validation fails
         }
     });
-
-    function checkFormCompletion() {
-        let nameFilled = $('#name').val().trim() !== "";
-        let emailFilled = $('#email').val().trim() !== "";
-        let isFormComplete = nameFilled && emailFilled;
-        
-        $('#submitButton').prop('disabled', !isFormComplete);
-    }
-
-    $('#name, #email').on('input', function() {
-        checkFormCompletion();
-    });
-
-    checkFormCompletion();
 });
